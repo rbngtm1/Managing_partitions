@@ -1,6 +1,6 @@
 #### Creating partitions
-
-cat /proc/partitions
+to see partition in disk
+cat /proc/partitions  (here sdb don't have any nely partitions
 fdisk /dev/sdb
 m --print the menu
 p for printing sector info
@@ -10,7 +10,7 @@ n for new partitions
 you will get options
 
 partion number   (you may select default)
-first sector  if given sth like (34-257) you can use first index number here its 34
+first sector  (you may use default)
 last sector              (if you use enter will use the entire disk) option is +size{K,M,G,T,P} you may use sth like +100M
 
 p to check what changes you made and w will write to disk
